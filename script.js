@@ -80,3 +80,15 @@ document.getElementById('reset').addEventListener('click', () => {
     // Hide celebration image
     document.querySelector('.imgbox img').style.width = "0px";
 });
+element.addEventListener('click', () => {
+    if (boxtext.innerText === '' && !isgameover) {
+        boxtext.innerText = turn;
+        boxtext.classList.add(turn); // Add class X or O for styling
+        turn = changeTurn();
+        audioTurn.play();
+        checkWin();
+        if (!isgameover) {
+            document.querySelector(".info").innerText = "Turn for " + turn;
+        }
+    }
+});
