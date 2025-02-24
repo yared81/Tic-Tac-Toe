@@ -16,7 +16,7 @@ nav ul{
 .gameContainer{ 
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .container{
@@ -73,15 +73,15 @@ nav ul{
     border-bottom: 0;
 }
 
-#reset {
+#reset{
     margin: 0 23px;
     padding: 1px 18px;
     background: #f3e7f9;
     border-radius: 6px;
     cursor: pointer;
-    font-family: 'Baloo Bhaina 2';
-    font-size: 15px;
-    font-weight: bolder;
+    font-family: 'Elephant', cursive;
+    font-size: 20px;
+     
 }
 
 .line{
