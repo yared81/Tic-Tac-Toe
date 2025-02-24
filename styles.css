@@ -1,7 +1,10 @@
- .gameContainer{ 
+body{
+    background-image: url("./backgtic.jpg");    
+}
+.gameContainer{ 
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 70px;  
 }
 
 .container{
@@ -10,6 +13,9 @@
     grid-template-columns: repeat(3, 10vw);
     font-family: 'Roboto', sans-serif;
     position: relative;
+    background-color: rgba(255, 255, 255, 0.96); 
+    padding: 20px;
+         
 }
 .box{
     border: 2px solid rgb(8, 26, 230);
@@ -31,6 +37,9 @@
 .gameInfo{
     padding: 0 34px;
     font-family: 'Elephant', cursive;
+    background-color: rgba(255, 255, 255, 0.96); 
+    padding: 20px;
+    
 }
 
 .gameInfo h1{

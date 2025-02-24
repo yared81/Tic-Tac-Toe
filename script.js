@@ -61,7 +61,7 @@ Array.from(boxes).forEach(element => {
     });
 });
 
-// Add onclick listener to reset button
+
 document.getElementById('reset').addEventListener('click', () => {
     let boxtexts = document.querySelectorAll('.boxtext');
     Array.from(boxtexts).forEach(element => {
@@ -83,7 +83,11 @@ document.getElementById('reset').addEventListener('click', () => {
 element.addEventListener('click', () => {
     if (boxtext.innerText === '' && !isgameover) {
         boxtext.innerText = turn;
-        boxtext.classList.add(turn); // Add class X or O for styling
+
+        // Remove previous color class before adding the new one
+        boxtext.classList.remove("X", "O"); 
+        boxtext.classList.add(turn); // Add class 'X' or 'O'
+
         turn = changeTurn();
         audioTurn.play();
         checkWin();
